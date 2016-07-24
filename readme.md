@@ -1,1 +1,2 @@
-Boilerplate React App
+# react-timer
+A simple react timer app
