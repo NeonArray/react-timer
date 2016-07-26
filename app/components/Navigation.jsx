@@ -1,6 +1,11 @@
 var React = require('react');
 var { Link, IndexLink } = require('react-router');
 
+/**
+ *
+ * @returns {XML}
+ * @constructor
+ */
 var Navigation = () => {
   return (
     <div className="top-bar">

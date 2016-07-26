@@ -1,6 +1,12 @@
 var React = require('react');
 var Navigation = require('Navigation');
 
+/**
+ *
+ * @param props
+ * @returns {XML}
+ * @constructor
+ */
 var Main = (props) => {
   return (
     <div>

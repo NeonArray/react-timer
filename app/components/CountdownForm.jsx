@@ -1,7 +1,14 @@
 var React = require('react');
 
+/**
+ *
+ */
 var CountdownForm = React.createClass({
 
+  /**
+   *
+   * @param e
+   */
   onSubmit: function (e) {
     e.preventDefault();
 
@@ -13,6 +20,10 @@ var CountdownForm = React.createClass({
     }
   },
 
+  /**
+   *
+   * @returns {XML}
+   */
   render: function () {
     return (
       <div>
