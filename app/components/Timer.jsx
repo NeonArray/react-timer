@@ -43,13 +43,17 @@ var Timer = React.createClass({
     }
   },
 
+  /**
+   *
+   */
   componentWillUnmount: function () {
     clearInterval(this.timer);
     this.timer = undefined;
   },
 
   /**
-   *
+   * create a timer that adds one second every thousand ticks
+   * and sets the state to equal the count
    */
   startTimer: function () {
     this.timer = setInterval(() => {
@@ -72,12 +76,20 @@ var Timer = React.createClass({
     });
   },
 
+  /**
+   *
+   * @param newStatus
+   */
   handleStatusChange: function (newStatus) {
     this.setState({
       timerStatus: newStatus
     });
   },
 
+  /**
+   *
+   * @returns {XML}
+   */
   render: function () {
     var { count, timerStatus } = this.state;
 

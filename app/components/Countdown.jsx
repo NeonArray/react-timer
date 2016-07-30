@@ -42,6 +42,9 @@ var Countdown = React.createClass({
     }
   },
 
+  /**
+   *
+   */
   componentWillUnmount: function () {
     clearInterval(this.timer);
     this.timer = undefined;
@@ -76,6 +79,10 @@ var Countdown = React.createClass({
     });
   },
 
+  /**
+   *
+   * @param newStatus
+   */
   handleStatusChange: function (newStatus) {
     this.setState({
       countdownStatus: newStatus
